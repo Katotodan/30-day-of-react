@@ -1,0 +1,145 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+ 
+.top--header{
+  display: flex;
+  background-color: cornflowerblue;
+  height: 4rem;
+  padding: 1rem;
+}
+.header--img{
+  height: 90%;
+  border-radius: 5px;
+  margin-right: 1rem;
+}
+.header--title{
+  margin-right: auto;
+}
+form{
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  background-color: rgb(37, 218, 218);
+}
+form >*{
+  width: 100%;
+  padding: 0.5rem 0rem;
+}
+form input{
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+.btn--parent{
+  padding: 1rem;
+}
+button{
+  display: block;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+.imgContainer{
+  border: 0.5rem solid cornflowerblue;
+  width: 50%;
+  transform: translateX(50%);
+  height: 26rem;
+  position: relative;
+}
+.imgae--viewer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -3333;
+}
+.imgContainer h4{
+  position: absolute;
+  left: 0;
+  padding: 0 0.5rem;
+  text-align: center;
+  display: block;
+  height: auto;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.imgContainer .upText{
+  top: 0.5rem;
+}
+.imgContainer .bottomText{
+  bottom: 0.5rem;
+  
+}
+@media screen and (max-width: 1099px) {
+  .imgContainer{
+    width: 70%;
+    transform: translateX(20%);
+  }
+}
+@media screen and (max-width: 750px) {
+  .imgContainer{
+    width: 90%;
+    transform: translateX(5%);
+    height: 23rem;
+  }
+  form{
+    flex-direction: column;
+  }
+}
+@media screen and (max-width:550px) {
+  .imgContainer{
+    height: 20rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .top--header{
+    padding: 1rem 0.5rem;
+  }
+  .header--img{
+    margin-right: 0.5rem;
+  }
+  .header--text{
+    width: 7rem;
+  }
+  .imgContainer{
+    height: 16rem;
+  }
+}
+@media screen and (max-width: 355px) {
+  .header--title{
+    font-size: 1rem !important;
+    margin-right: 0.5rem;
+  }
+  .header--text{
+    font-size: 0.8rem !important;
+    width: 5rem;
+  }
+  .imgContainer{
+    margin-left: 0;
+    margin-right: 0;
+    height: 13rem;
+  }
+}
+@media screen and (max-width: 276px) {
+  .header--text{
+    width: 7rem;
+  }
+}
