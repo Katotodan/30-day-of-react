@@ -1,0 +1,1 @@
+In this app, we fetch data using axios library, in oder to prevent the api key, we fetch data in the backend.
