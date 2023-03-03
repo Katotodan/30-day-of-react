@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.app{
+  display: flex;
+  position: relative;
+}
+.left--container{
+  height: 100vh;
+  background-color: #595858;
+  width: 16rem;
+  position: fixed;
+}
+.right--container{
+  background-color: #f0f0f0;
+  width: 100%;
+  min-height: 100vh;
+  max-height: fit-content;
+  margin-left:16rem ;
+}
+
+form{
+  padding: 4rem 2rem;
+  color: white;
+}
+form div{
+  margin-bottom: 2.5rem;
+  font-size: large;
+}
+form button{
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.word--game--title{
+  text-align: center;
+  margin: 2rem 0;
+  display: block;
+}
+.select--paragraph{
+  margin: 7rem 0 3rem 3rem;
+}
+.click--search{
+  float: right;
+  margin-right: 3rem;
+  padding: 0.5rem 1rem;
+  background-color: rgb(179, 179, 211);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.select--paragraph h3{
+  text-align: center;
+}
+.select--paragraph p{
+  font-size: 1.3rem;
+}
+.good-luck{
+  margin-top: 4rem;
+}
+.questions{
+  margin-left: 10rem;
+}
+.questions{
+  margin-left: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.question--div{
+  background-color: aquamarine;
+  padding: 0.5rem;
+  width: 30%;
+  height: auto;
+
+}
+.your--answer{
+  margin: 1.5rem 0  !important;
+  text-align: center;
+  height: 1.5rem;
+  width: 100%;
+}
+.correct-answer{
+  margin: 0;
+  text-align: center;
+  height: 1.5rem;
+  width: 100%;
+}
+.no--click{
+  pointer-events: none;
+  background-color: rgb(181, 211, 201);
+}
+.correct-answer{
+  display: none;
+}
