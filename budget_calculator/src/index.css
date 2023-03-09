@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(156, 145, 145);
+  min-height: 75vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+h2{
+  margin: 1.5rem;
+  text-align: center;
+}
+.core--app{
+  background-color: white;
+  width: 70%;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 10px;
+  min-height: 10rem;
+  max-height: auto;
+}
+/* Header form styling */
+.form--container{
+  display: flex;
+  gap: 4rem;
+}
+.form--container div{
+  width: 100%;
+}
+.form--container div input{
+  width: 90%;
+  margin: 1rem 0;
+  border: 0 ;
+  border-bottom: 2px solid black;
+  padding: 0.5rem 1rem;
+}
+.form--container div input:focus{
+  outline: none;
+}
+form button{
+  display: block;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+/* List styling */
+li{
+  width: 100%;
+  margin : 0.3rem 0 0 0;
+  padding: 0.2rem;
+  list-style: none;
+}
+li div{
+  display: inline-block;
+}
+li div:first-child{
+  flex-wrap: wrap;
+  width: 70%;
+}
+li div:nth-child(2){
+  width: 15%;
+}
+li div:last-child{
+  margin-left: 1rem;
+}
+li div:last-child span{
+  margin:0 1rem;
+}
+.delete--btn{
+  color: rgb(234, 29, 29);
+}
+.clean--all{
+  background-color: rgb(234, 29, 29);
+  border: 0;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0 0 0;
+  font-size: 1.1rem;
+}
+
+/* Total amount styling */
+.amont--div{
+  margin: 2rem 0 1rem 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.total--amount{
+  display: inline-block;
+  padding: 0 0.5rem;
+  margin-left: 0.5rem;
+  background-color: rgb(234, 29, 29);
+  border-radius: 5px;
+}
+/* Alert msg */
+.alert--msg{
+  height: 1.5rem;
+  width: 70%;
+  background-color: azure;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
