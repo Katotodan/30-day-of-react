@@ -101,11 +101,21 @@ li div:last-child span{
   border-radius: 5px;
 }
 /* Alert msg */
-.alert--msg{
+.alert-container{
   height: 1.5rem;
   width: 70%;
-  background-color: azure;
-  text-align: center;
   margin: 0 auto;
   margin-bottom: 1rem;
+
+}
+.alert--msg{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.successBg{
+  background-color: #f0f0f0;
+}
+.failBg{
+  background-color: rgb(253, 76, 76);
 }
