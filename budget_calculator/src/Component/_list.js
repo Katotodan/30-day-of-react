@@ -2,9 +2,9 @@ import {AiFillEdit} from "react-icons/ai"
 import {AiFillDelete} from "react-icons/ai"
 
 export default function ListItem ({list, deleteAll, deleteOne, edit}){
-    let item = list.map(item =>{
+    let item = list.map((item, index )=>{
         return(
-            <div>
+            <div key={index}>
                 <li>
                     <div>{item.name}</div>
                     <div>${item.amount}</div>

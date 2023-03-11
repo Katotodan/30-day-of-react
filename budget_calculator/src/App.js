@@ -21,7 +21,6 @@ function App() {
   
   React.useEffect(() => {
     localStorage.setItem('items', JSON.stringify(listItem));
-    setListItem(() => JSON.parse(localStorage.getItem('items')))
   }, [listItem])
   
   let amounts = 0;
@@ -73,7 +72,7 @@ function App() {
     viewAlert("All items has been deleted", "failBg")
   }
   const deleteOne = (id) =>{
-    const temp = listItem.filter(item => item.id != id)
+    const temp = listItem.filter(item => item.id !== id)
     setListItem(temp)
     viewAlert("Item deleted", "failBg")
   }
@@ -119,5 +118,5 @@ function App() {
 
 export default App;
 
-// Working on the use effect warning
+// Next step: working on responsiveness
 
