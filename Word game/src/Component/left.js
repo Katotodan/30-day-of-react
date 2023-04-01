@@ -6,7 +6,7 @@ export default class Left extends React.Component{
         this.state = {
             categorie:"musique",
             level:"easy",
-            limit: 10,
+            limit: 10
         }
         this.handleChange = this.handleChange.bind(this)
     }
@@ -52,12 +52,12 @@ export default class Left extends React.Component{
                         </select>
                     </div>
                     <div>
-                        <label>Limit</label><br/>
+                        <label>Limit: {this.state.limit}</label><br/>
                         <input 
                         type="range" 
                         id="limit" 
                         name="limit" 
-                        min="0" max="15"
+                        min="1" max="15"
                         value={this.state.limit}
                         onChange={this.handleChange}
                         /><br/>

@@ -52,10 +52,11 @@ export default function NewData (props){
     }
     return( 
         <div>
-            <p>Score: {score}/{newData.length}</p>
+            
             <div className="questions">
                 {newData}
             </div>
+            { newData.length>0 && <p className="score">Score: {score}/{newData.length}</p>}
         </div>  
         
     )
