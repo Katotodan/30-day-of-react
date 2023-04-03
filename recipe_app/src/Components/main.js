@@ -2,6 +2,7 @@ import SearchBar from "./searchBar"
 import "../../src/index.css"
 import FoodsList from "./foods";
 import React from "react"
+import FoodView from "./foodView";
 
 
 function Main() {
@@ -21,9 +22,11 @@ function Main() {
       < SearchBar 
         searchChanges= {searchChanges} 
         sub= {handleSubmition}/>
-      < FoodsList 
+      {/* < FoodsList 
         url = {url}
-      />
+      /> */}
+      <FoodView id="52772"/>
+
     </div>
   );
 }
