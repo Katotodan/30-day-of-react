@@ -90,8 +90,14 @@ code {
   display: block;
   margin: 1rem 5rem 0  5rem !important;
 }
-
-
+/* Load */
+.load{
+  text-align: center;
+}
+/* Not found food */
+.not--found{
+  text-align: center;
+}
 
 
 

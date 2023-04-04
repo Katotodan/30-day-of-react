@@ -1,11 +1,13 @@
 import "../../src/index.css"
-const SearchBar = ({searchChanges , sub}) =>{
+
+const SearchBar = ({searchChanges , sub , value}) =>{
     return (
-        <form className="input--form" onSubmit={sub}>
+        <form className="input--form" onSubmit={sub} action="/">
             <input 
                 type="text" 
-                placeholder="Enter a food name" 
+                placeholder="Search by food's name" 
                 onChange= {searchChanges}
+                value={value}
             />
             <button type="submit">Search</button>
         </form>

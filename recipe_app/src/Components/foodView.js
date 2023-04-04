@@ -1,7 +1,9 @@
 import React from "react"
 import "../../src/index.css"
+import { useParams } from "react-router-dom"
 
-const FoodView = ({id}) =>{
+const FoodView = () =>{
+    const {id} = useParams()
     const [foodName,setFoodName] = React.useState("")
     const [foodArea,setFoodArea] = React.useState("")
     const [foodCategory,setFoodCategory] = React.useState("")
